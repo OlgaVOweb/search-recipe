@@ -1,38 +1,115 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .App {
+    background-color: rgba(255, 255, 255, 0.432);
+}
+form{
+  width: 40%;
+}
+.cal {
+  font-weight: bolder;
+  margin-bottom: 20px;
+
+}
+.search {
+  width: 100%;
+  background-color: transparent;
+  color: #575756;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+  margin: 15px 0;
+  font-size: 20px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  padding: 15px 0;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  li {
+    padding: 10px;
   }
-}
+
+  h1, h2, ul, p {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    color: #464444;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    margin-bottom: 15px;
+    border: none;
+    background: none;
+  }
+  .box {
+    background-color: #ddd6e8;
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  h2{
+    font-size: 20px;
+    margin: 20px 10px;
+    text-align: center;
+  }
+
+  .icon {
+    width: 15px;
+    margin-right: 10px;
+  }
+  
+  .imgRecipe {
+    width: 450px;
+  }
+
+  @media all and (max-width: 900px){
+    .box {
+      width: 70%;
+      margin-left: 15%;
+    }
+    form{
+      width: 70%;
+    }
+    .imgRecipe {
+      width: 400px;
+    }
+  }
+
+  @media all and (max-width: 800px){
+    .box {
+      width: 60%;
+      margin-left: 20%;
+    }
+    form{
+      width: 60%;
+    }
+    .imgRecipe {
+      width: 350px;
+    }
+  }
+
+  @media all and (max-width: 500px){
+    .box {
+      width: 90%;
+      margin-left: 5%;
+    }
+    form{
+      width: 90%;
+    }
+    .imgRecipe {
+      width: 300px;
+    }
+  }
